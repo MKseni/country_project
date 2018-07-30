@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+     <meta charset="utf-8">
+     <title>КСК Кантри</title>
+     <link href="https://fonts.googleapis.com/css?family=Podkova" rel="stylesheet">
+     <link rel="stylesheet" href="country_CSS.css" type="text/css">
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+     <script src="country.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script>
+    YMaps.jQuery(function () {
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+        map.setCenter(new YMaps.GeoPoint(30.313497,59.938531), 10);
+    });
+    window.onscroll = function(event) {
+      var elem = document.body.getElementsByClassName("totop")[0];
+      var className = elem.className;
+      var newClassName = className.replace(/ enabled$/, "");
+      var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrolled > window.innerHeight) {
+        elem.className = newClassName + " enabled";
+      } else {
+        elem.className = newClassName;
+      }
+    }
+    </script>
+    <script>
+     $("document").ready(function(){
+      $('a[href*=#]').anchor({
+         transitionDuration : 1200
+      });
+    });
+    </script>
+    <script>
+      $(document).ready(function(){ 
+        $("a#link").easyTooltip({
+          useElement: "item"           
+        });
+      });
+    </script>
+
+  </head>
+      <body>
+      	<header class="main-head">
+               <span>+7 (904) 513-61-03</span>
+               <img src="img/logogo.png" class="logo">
+      	</header>
+
+          <ul class="navbar" id="menu">
+              <li><a href="#a1">Наш клуб</a></li>
+              <li><a href="#a2">Услуги</a></li>
+              <li><a href="#a3">Контакты</a></li>
+          </ul>
+          
+      <hr></hr>
+
+      <h1 id="a1">
+      	КСК Кантри
+      </h1>
+      <p>Наш клуб расположен в близи поселка Лесколово (пол часа езды от севера города). В экологически-чистом месте, участок обрамляют лес и ровные поля, по которым можно вдоволь скакать, даже есть несколько троеборных барьеров.
+        <img src="img/kentucky.jpg" class="foto">
+      <br>Для Ваших лошадок комфортные домашние условия, неограниченный выгул, сено в волю, квалифицированный персонал, с многолетним опытом работы с лошадьми и всадниками. <br>Конюшня деревянная из оцилиндрованного бревна, утепленная, из экологически-чистых дышащих материалов, на 34 головы.
+      <ul class="class1">
+      <li>Денники 3,5*3</li>
+      <li>Проход 3 метра</li>
+      <li>Окна в каждом деннике</li>
+      <li>3 выхода, тамбуры, вентиляция</li>
+      <li>Амуничники в конюшне</li>
+      <li>Манежи крытый тентовый вентилируемый 22*60 и открытое поле примерно 50х60</li>
+      <li>Левады электропастухи и стационарные. 
+      Возможен выпас как в табуне, так и отдельно.</li>
+      <li>Домик для гостей и постояльцев клуба</li>
+      </ul>
+      <p style="text-align: center">Дополнительным плюсом является трасса без пробок!</p>
+      <p style="color:red; text-align: center">* присоединившимся к нам до Нового Года скидки и специальные предложения
+      </p>
+      <hr></hr>
+      <h1 id="a2">
+          Услуги
+      </h1>
+        <table>
+            <tr>
+              <td class="aboutImg">
+                <img src="img/постой.png" alt="картинка с лошадкой">
+              </td>
+              <td class="about">
+              <h2>Постой</h2>
+      <br>Доверив нам своего копытного друга, можете быть <br>уверенны в его благополучии - никто из наших <br>подопечных не будет обделен любовью и заботой.
+      <br>Особые условия для лошадок-пенсионеров, молодняка и поней.</td>
+          </tr>
+            <tr>
+              <td class="aboutImg">
+                <img src="img/обучение.png" alt="картинка с лошадкой">
+                </td>
+              <td class="about">
+              <h2>Обучение</h2>
+      <br>Наши граммотные инструктора и тренера помогут Вам <br>научиться чувствовать и понимать лошадь, стать <br>партнёрами в достижении спортивных высот и просто <br>отдохнуть от городской суеты.
+      </td>
+          </tr>
+            <tr>
+              <td class="aboutImg">
+                <img src="img/прогулки.png" alt="картинка с лошадкой">
+                </td>
+              <td class="about">
+                <h2>Прогулки в поля</h2>
+      <br>Окружающие нас, бескрайние поля и леса не оставят <br>Вас равнодушным, и Вам обязательно захочется <br>вернуться и снова ощутить это непередоваемое чувство <br>полёта и единства с природой, которое подарят Вам <br>наши питомцы.
+      </td>
+          </tr>
+             <tr>
+              <td class="aboutImg">
+                <img src="img/ippo.png" alt="картинка с лошадкой"></td>
+              <td class="about">
+                <h2>Иппотерапия</h2>
+      <br>Лошади обладают чудесным свойством - они лечат. <br>Подарите своему ребёнку радость и волшебство, а наши <br>милые, спокойные лошадки и опытный персонал <br>помогут Вам в этом. Даже самые робкие детки <br>почувствуют себя уверенней.</td>
+          </tr>
+            <tr>
+              <td class="aboutImg">
+                <img src="img/свинья.png" alt="картинка с поросёнком">
+              </td>
+              <td class="about">
+              <h2>Мини-ферма</h2>
+      <br>Плотнее соприкоснуться с миром животных, Вашему <br>ребёнку помогут питомцы на нашей чудесной <br>мини-фермы. С ними будет интересно пообщаться не <br>только детишкам, но и их родителям.</td>
+          </tr>
+          </table>
+        <div class="price">
+          <div class="thumbnail-item">
+            <a href="#">
+              <img src="img/постой2.png" class="thumbnail" />
+            </a>
+            <div class="tooltip">
+              <img src="img/постой3.png" alt="">
+              <span class="overlay"></span>
+            </div>
+          </div>
+          <div class="thumbnail-item">
+            <a href="#">
+              <img src="img/обучение2.png" class="thumbnail" />
+            </a>
+            <div class="tooltip">
+              <img src="img/обучение3.png" alt="">
+              <span class="overlay"></span>
+            </div>
+          </div>
+          <div class="thumbnail-item">
+            <a href="#">
+              <img src="img/прогулки2.png" class="thumbnail">
+            </a>
+            <div class="tooltip">
+              <img src="img/прогулки3.png" alt="">
+              <span class="overlay"></span>
+            </div>
+          </div>
+          <div class="thumbnail-item">
+            <a href="#">
+              <img src="img/иппо2.png" class="thumbnail">
+            </a>
+            <div class="tooltip">
+              <img src="img/иппо3.png" alt="">
+              <span class="overlay"></span>
+            </div>
+          </div>
+        </div>
+
+
+      <!--<div class="price">
+        <a href="img/постой3.png" class="tooltip" title="Постой">
+          <img src="img/постой2.png" class="thumbnail-item">
+        </a>
+        <a href="img/обучение3.png" class="tooltip" title="Обучение">
+          <img src="img/обучение2.png" class="thumbnail-item">
+        </a>
+        <a href="img/прогулки3.png" class="tooltip" title="Прогулки">
+          <img src="img/прогулки2.png" class="thumbnail-item">
+        </a>
+        <a href="img/иппо3.png" class="tooltip" title="Иппотерапия">
+          <img src="img/иппо2.png" class="thumbnail-item">
+        </a>
+      </div>-->
+      <hr></hr>
+      <h1 id="a3">
+          Контакты
+      </h1>
+      <div class="wrapper">
+        <div class="leftstr">
+          <strong>Адрес:</strong> Россия, Ленинградская обл., <br>Всеволожский р-н, Лесколовское сельское <br>поселение, пос. Аньялово
+        </div>
+        <div class="rightstr">
+          <strong>Тел.:</strong> +79045136103 Анастасия
+          <br>Наша группа ВКонтакте: <br>
+          <a href="https://vk.com/ksk_kantri">КСК Кантри</a>
+        </div> 
+          <div style="clear: left"></div>
+      </div>
+      <div class="icons">
+        <img src="img/horse.png" class="icon1">
+        <img src="img/buss.png" class="icon2">
+      </div>
+      <div class="map">
+        <div id="YMapsID" style="width:100%; height:400px"></div>
+      </div>
+    <a id="pageUp">
+      <img src="img/to-top.png" class="totop">
+    </a>
+    <footer>
+    	&#169; MKseni 2017
+    </footer>
+  </body>
+</html>
